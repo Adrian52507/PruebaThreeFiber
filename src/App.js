@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import Background from "three/src/renderers/common/Background.js";
 
-function App() {
+function Box() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <mesh>
+      <boxGeometry args={[1, 1, 1]} />
+      <meshStandardMaterial color="royalblue" />
+    </mesh>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <Canvas style={{ height: "100vh", width: "100vw", background: "black" }}>
+      <ambientLight intensity={0.5} />
+      <directionalLight position={[2, 2, 2]} />
+      <Box />
+      <OrbitControls />
+    </Canvas>
+  );
+}
+
