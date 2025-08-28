@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PruebaThreeFiber/static/css/main.e6c13ad2.css",
+    "main.js": "/PruebaThreeFiber/static/js/main.326e8f3b.js",
+    "static/js/453.da43a850.chunk.js": "/PruebaThreeFiber/static/js/453.da43a850.chunk.js",
+    "index.html": "/PruebaThreeFiber/index.html",
+    "main.e6c13ad2.css.map": "/PruebaThreeFiber/static/css/main.e6c13ad2.css.map",
+    "main.326e8f3b.js.map": "/PruebaThreeFiber/static/js/main.326e8f3b.js.map",
+    "453.da43a850.chunk.js.map": "/PruebaThreeFiber/static/js/453.da43a850.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.326e8f3b.js"
+  ]
+}
